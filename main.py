@@ -111,4 +111,19 @@ def main():
         ValueError: If the input cannot be converted to a float.
     """
 
-    
+    try:
+        result = process_random_integer()
+        print(f"The final result after processing is: {result}")
+    except ValueError as e:
+        print(e)
+        
+    """
+    Generate and process a random integer within a given range.
+    Args:
+        min_value (int): The minimum value of the random integer (inclusive). Default is 0.
+        max_value (int): The maximum value of the random integer (inclusive). Default is 100.
+    Returns:
+        int: The processed result after performing operations on the random integer.
+    Raises:
+        ValueError: If the range defined by min_value and max_value is invalid.
+    """
