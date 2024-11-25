@@ -80,3 +80,13 @@ Args:
 Returns:
     Gives results divisible by n and informs if cannot divide by 0
 """
+
+def main():
+    user_input = input("Enter a number to find its square root: ")
+    
+    """User_input
+    Args:
+        Input: user_input
+    Returns:
+        Ask user what number they want to square root
+    """
