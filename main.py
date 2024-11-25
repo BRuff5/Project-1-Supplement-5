@@ -23,3 +23,15 @@ def process_random_integer():
     Result:
         Displays random number that was generated
     """
+    
+    if number % 2 != 0:  # Odd
+        number *= 2
+        print(f"Number is odd, multiplying by 2: {number}")
+        
+    """If the number is odd, multiply it by 2.
+    Args:
+        Recives user input
+    Result:
+        If user input is odd the it will be multiplyed by 2
+    """
+    
