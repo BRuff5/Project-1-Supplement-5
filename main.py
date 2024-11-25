@@ -30,7 +30,7 @@ def process_random_integer():
         
     """If the number is odd, multiply it by 2.
     Args:
-        Recives user input
+        user_input: Recieves user_input
     Result:
         If user input is odd the it will be multiplyed by 2
     """
@@ -41,7 +41,7 @@ def process_random_integer():
         
     """If the number is divisible 3 divide it by 3
     Args:
-        Recives user input
+        user_input: Recieves user_input
     Result:
         If user input is divisible 3 then divide number by 3
     """
@@ -52,8 +52,19 @@ def process_random_integer():
         
     """If the number is divisible 4 divide it by 4
     Args:
-        Recives user input
+        user_input: Recieves user_input
     Result:
         If user input is divisible 4 then divide number by 4
     """
     
+    if number > 4:
+        raise ValueError("The resulting number is greater than 4.")
+    
+    """If number is greater than 4
+    Args:
+        user_input: Recieves user_input
+    Returns:
+        informs the number is greater than 4
+    """
+    
+    return number
