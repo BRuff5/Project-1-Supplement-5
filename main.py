@@ -127,3 +127,23 @@ def main():
     Raises:
         ValueError: If the range defined by min_value and max_value is invalid.
     """
+    
+    user_input = input("Enter a number to find integers between 1 and 10 that are divisible: ")
+    try:
+        n = int(user_input)
+        result_list = divisible_numbers(n)
+        print(f"Integers between 1 and 10 that are divisible by {n}: {result_list}")
+    except ValueError as e:
+        print(e)
+
+if __name__ == "__main__":
+    main()
+    
+    """User input to find divisibility
+    Args: 
+        user_input: number from user
+    Results:
+        print: lets user know what number are divisble
+    Raises
+        ValueError
+    """
