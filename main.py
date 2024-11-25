@@ -8,9 +8,11 @@ def square_root(num):
 
     """Return the square root of a number or raise an exception if negative
     Args:
-        Returns number
-    Return:
-        Squeres a number and if number is negative invalid response message appears
+        num: The argument passed to the function, which must be a float or an integer. It represents the number for which the square root is to be calculated.
+    Returns:
+        A float value, which is the square root of num.
+    Raises:
+        ValueError is explicitly raised if num is negative to indicate invalid input.
     """
     
 def process_random_integer():
@@ -90,3 +92,23 @@ def main():
     Returns:
         Ask user what number they want to square root
     """
+    
+    try:
+        num = float(user_input)
+        root = square_root(num)
+        print(f"The square root of {num} is {root}")
+    except ValueError as e:
+        print(e)
+        
+    """
+    Calculate the square root of a given number.
+    Args:
+        user_input (str): The input value provided by the user, which is expected to be a number.
+    Returns:
+        float: The square root of the input number if valid.
+        str: An error message if the input is not valid.
+    Raises:
+        ValueError: If the input cannot be converted to a float.
+    """
+
+    
