@@ -13,3 +13,13 @@ def square_root(num):
         Squeres a number and if number is negative invalid response message appears
     """
     
+def process_random_integer():
+    number = random.randint(1, 100)
+    print(f"Random number generated: {number}")
+    
+    """Pick a random integer between 1 and 100
+    Args:
+        Pulls imported random number
+    Result:
+        Displays random number that was generated
+    """
