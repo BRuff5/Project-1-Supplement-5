@@ -46,7 +46,7 @@ def process_random_integer():
         If user input is divisible 3 then divide number by 3
     """
         
-    if number % 4 == 0:  # Divisible by 4
+    if number % 4 == 0:  
         number *= 4
         print(f"Number is divisible by 4, multiplying by 4: {number}")
         
@@ -56,3 +56,4 @@ def process_random_integer():
     Result:
         If user input is divisible 4 then divide number by 4
     """
+    
