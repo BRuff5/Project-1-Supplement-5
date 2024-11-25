@@ -68,3 +68,15 @@ def process_random_integer():
     """
     
     return number
+
+def divisible_numbers(n):
+    if n == 0:
+        raise ValueError("Cannot divide by zero.")
+    return [i for i in range(1, 11) if i % n == 0]
+
+"""Return a list of integers between 1 and 10 that are divisible by n.
+Args:
+    List: Integers between 1 and 10 that are divisible by n
+Returns:
+    Gives results divisible by n and informs if cannot divide by 0
+"""
